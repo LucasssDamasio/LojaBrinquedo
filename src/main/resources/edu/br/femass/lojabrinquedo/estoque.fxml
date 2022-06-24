@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.br.femass.lojabrinquedo.Controller.EstoqueController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="752.0" style="-fx-background-color: #2900DF;">
+         <children>
+            <Button fx:id="BtnMenu" mnemonicParsing="false" onAction="#BtnMenu_Action" prefHeight="52.0" prefWidth="197.0" style="-fx-background-color: #2900DF;" text="ATOMIC TOYS" textFill="#ebe8e8">
+               <font>
+                  <Font name="Monotype Corsiva" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="299.0" style="-fx-background-color: #2900DF;" text="Controle de estoque" textFill="#ebe8e8">
+               <font>
+                  <Font name="Monotype Corsiva" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ListView fx:id="LstBrinquedo" layoutX="14.0" layoutY="72.0" prefHeight="373.0" prefWidth="712.0" />
+   </children>
+</AnchorPane>

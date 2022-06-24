@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.br.femass.lojabrinquedo.Controller.MainController">
+   <children>
+      <BorderPane layoutX="-3.0" layoutY="-4.0" prefHeight="475.0" prefWidth="752.0">
+         <left>
+            <VBox prefHeight="415.0" prefWidth="157.0" style="-fx-background-color: #016AFB;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="BtnCompra" mnemonicParsing="false" onAction="#BtnCompra_Action" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #016AFB;" text="COMPRA" textFill="#eee9e9">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnEstoque" mnemonicParsing="false" onAction="#BtnEstoque_Action" prefHeight="52.0" prefWidth="149.0" style="-fx-background-color: #016AFB;" text="ESTOQUE" textFill="#f5f4f4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnVenda" mnemonicParsing="false" onAction="#BtnVenda_Action" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #016AFB;" text="VENDA" textFill="#eeecec">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnCliente" layoutX="10.0" layoutY="106.0" mnemonicParsing="false" onAction="#BtnCliente_Action" prefHeight="54.0" prefWidth="149.0" style="-fx-background-color: #016AFB;" text="CLIENTE" textFill="#eeecec">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnFornecedor" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" onAction="#BtnFornecedor_Action" prefHeight="52.0" prefWidth="156.0" style="-fx-background-color: #016AFB;" text="FORNECEDOR" textFill="#f5f4f4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnBrinquedo" layoutX="10.0" layoutY="214.0" mnemonicParsing="false" onAction="#BtnBrinquedo_Action" prefHeight="52.0" prefWidth="156.0" style="-fx-background-color: #016AFB;" text="BRINQUEDO" textFill="#f5f4f4">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="60.0" prefWidth="752.0" style="-fx-background-color: #2900DF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="52.0" prefWidth="197.0" style="-fx-background-color: #2900DF;" text="ATOMIC TOYS" textFill="#ebe8e8">
+                     <font>
+                        <Font name="Monotype Corsiva" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ImageView fx:id="IVlego" fitHeight="248.0" fitWidth="380.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@lego.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

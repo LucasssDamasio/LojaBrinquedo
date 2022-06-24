@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.br.femass.lojabrinquedo.Controller.FornecedorController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="752.0" style="-fx-background-color: #2900DF;">
+         <children>
+            <Button fx:id="BtnMenu" mnemonicParsing="false" onAction="#BtnMenu_Action" prefHeight="52.0" prefWidth="197.0" style="-fx-background-color: #2900DF;" text="ATOMIC TOYS" textFill="#ebe8e8">
+               <font>
+                  <Font name="Monotype Corsiva" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="249.0" style="-fx-background-color: #2900DF;" text="Cadastro de Fornecedor" textFill="#ebe8e8">
+               <font>
+                  <Font name="Monotype Corsiva" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ListView fx:id="LstFornecedor" layoutX="14.0" layoutY="72.0" onMouseClicked="#LstFornecedorOnClick" prefHeight="373.0" prefWidth="341.0" />
+      <Button fx:id="BtnGravarForn" layoutX="607.0" layoutY="418.0" mnemonicParsing="false" onAction="#BtnGravarForn_Action" prefHeight="25.0" prefWidth="90.0" text="Gravar" />
+      <Label layoutX="365.0" layoutY="122.0" text="Nome" />
+      <Label layoutX="365.0" layoutY="172.0" prefHeight="17.0" prefWidth="33.0" text="CNPJ" />
+      <Label layoutX="367.0" layoutY="226.0" text="Email" />
+      <TextField fx:id="TxtNomeFornecedor" layoutX="428.0" layoutY="118.0" />
+      <TextField fx:id="TxtCNPJ" layoutX="438.0" layoutY="168.0" />
+      <TextField fx:id="TxtEmail1" layoutX="438.0" layoutY="221.0" />
+      <Button fx:id="BtnExcluirForn" layoutX="383.0" layoutY="418.0" mnemonicParsing="false" onAction="#BtnExcluirForn_Action" prefHeight="25.0" prefWidth="90.0" text="Excluir" />
+      <Button fx:id="BtnAlterarForn" layoutX="495.0" layoutY="418.0" mnemonicParsing="false" onAction="#BtnAlterarForn_Action" prefHeight="25.0" prefWidth="79.0" text="Alterar" />
+   </children>
+</AnchorPane>
